@@ -60,6 +60,14 @@
       <Project>{07292f66-18d7-4639-a0da-68f2cec4f190}</Project>
       <Name>FibonacciMultipleNumbers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WEGA\WEGAProject.csproj">
+      <Project>{643e8a11-31a9-405f-9934-9fc2c7668d24}</Project>
+      <Name>WEGAProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\WEGA_unit_4\sygnaly.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

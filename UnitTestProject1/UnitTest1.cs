@@ -1,7 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using FibonacciMultipleNumbers;
 using System.Collections.Generic;
+using System.IO;
+
+using FibonacciMultipleNumbers;
+using WEGAProject;
+using System.Text;
 
 namespace UnitTestProject1
 {
@@ -28,5 +32,41 @@ namespace UnitTestProject1
             }
          
         }
+
+        #region WEGA_unit_4
+
+        // zadanie 4 z  http://informatyka.is-great.net/matura/2018/MIN-R2_1P-182.pdf
+
+        [TestMethod]
+        public void TestWEGA_Unit_4()
+        {
+            FileInfo file = new FileInfo(Path.Combine("../../Data/Wega_unit_4", "sygnaly.txt"));
+
+            Assert.IsTrue(file.Exists, $"Brak pliku {file.FullName}");
+
+            WEGA wega = new WEGA(file.FullName);
+
+            string result_4_1 = wega.Unit_4_1();
+            Assert.AreEqual("ZAPISZODPOWIEDZIWPLIKUTXT", result_4_1);
+
+            string result_4_2 = wega.Unit_4_2();
+
+            List<string> result_4_3 = wega.Unit_4_3();
+
+            // wynik zktóry ma byc zapisany w  pliku to :
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(result_4_1);
+            result.AppendLine(result_4_2);
+
+            foreach(string line in result_4_3)
+            {
+                result.AppendLine(line);
+            }
+  
+
+        }
+
+        #endregion WEGA_unit_4
+
     }
 }
