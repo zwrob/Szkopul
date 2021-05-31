@@ -2,10 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 using FibonacciMultipleNumbers;
 using WEGAProject;
-using System.Text;
+using SEcondNumbers;
+
 
 namespace UnitTestProject1
 {
@@ -68,5 +70,12 @@ namespace UnitTestProject1
 
         #endregion WEGA_unit_4
 
+        [TestMethod]
+        public void TestSecondNumbers()
+        {
+            // https://szkopul.edu.pl/problemset/problem/yZeuTNLgpfpx2vNXSGNRr2RE/site/?key=statement
+          //  Assert.AreEqual(true,SEcondNumbers.Numbers.Check(223));
+            Assert.AreEqual(false, SEcondNumbers.Numbers.Check(2017));
+        }
     }
 }

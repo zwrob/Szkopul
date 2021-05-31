@@ -60,6 +60,10 @@
       <Project>{07292f66-18d7-4639-a0da-68f2cec4f190}</Project>
       <Name>FibonacciMultipleNumbers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SEcondNumbers\SecondNumbers.csproj">
+      <Project>{6490624c-e8cf-4f42-9021-e644b2051dbf}</Project>
+      <Name>SecondNumbers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WEGA\WEGAProject.csproj">
       <Project>{643e8a11-31a9-405f-9934-9fc2c7668d24}</Project>
       <Name>WEGAProject</Name>
